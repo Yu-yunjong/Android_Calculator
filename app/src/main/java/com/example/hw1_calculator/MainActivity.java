@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         try {
-            // 값1과 값2가 비어있는지 확인(둘 다 비어있을 때 토스트메시지 출력)
+            // 값1과 값2가 비어있는지 확인(둘 중 하나라도 비어있을 때 토스트메시지 출력)
             if(value1.getText().toString().equals("") || value2.getText().toString().equals("")) {
                 Toast.makeText(getApplicationContext(), "입력란이 비어있습니다.", Toast.LENGTH_SHORT).show();
                 resultText.setText("err!!");
